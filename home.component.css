@@ -1,0 +1,12 @@
+
+
+
+.row{
+  display:flex;
+  gap:60px;
+}
+.cards{
+  width:600px;
+  height:450px;
+  padding:20px;
+}

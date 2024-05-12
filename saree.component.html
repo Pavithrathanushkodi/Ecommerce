@@ -1,0 +1,19 @@
+<!-- Saree Component HTML -->
+<div class="container text-center">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col-lg-4 card h-60 cards" *ngFor="let info of product; let i=index">
+      <img [src]="info.image" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h2>{{info.platform}}</h2>
+        <h2>{{info.price}}</h2>
+      </div>
+      <div class="card-footer">        
+        <div class="icons">
+          <a [href]="info.link" target="_blank">Buy</a>
+          <a routerLink="/cart"><i class="bi bi-bag-dash"></i></a>
+          <i class="bi bi-suit-heart" (click)="addToWishlist(info)"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

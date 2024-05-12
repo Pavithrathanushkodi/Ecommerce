@@ -1,0 +1,15 @@
+<div class="banner1">
+    <div class="container text-center">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-lg-4 card h-60 cards" *ngFor="let info of product; let i=index">
+             
+                  <a [routerLink]="info.link"><img [src]="info.image" class="card-img-top" alt="..."></a>
+              
+              <div class="card-body">
+                  <h2>{{info.name}}</h2>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    

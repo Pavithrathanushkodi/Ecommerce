@@ -1,0 +1,86 @@
+<!-- Web top header -->
+<div class="web-top-Header">
+  <div class="left">
+    <h1>QuickShop</h1>
+  </div>
+  <div class="center">
+    <div class="input-group box">
+      <input type="text" class="form-control" placeholder="Search For Products" aria-label="Search For Products"
+             aria-describedby="button-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button"><i class="bi bi-search"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <a href=" "><i class="bi bi-geo-alt icon1"></i> Order Tracking </a>
+  </div>
+</div>
+
+<!-- Web bottom header -->
+<div class="web-bottom-Header">
+  <div class="section1">
+    <i class="bi bi-list menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasmenu"></i>
+    <p>Categories</p>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasmenu" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      
+      <div class="offcanvas-body">
+        <ul>
+          <li><a routerLink="/saree">Woman's Collection</a></li>
+          <li><a routerLink="/mens">Men's Collection</a></li>
+          <li><a routerLink="/kids">Kid's Collection</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section3">
+    <div class="icon1">
+      <a href=" "><i class="bi bi-suit-heart"><span class="count">0</span></i></a>
+      <a href=" "><button type="button" class="btn-success not-button">0</button></a>
+    </div>
+
+    <div class="icon1">
+      <a href=" "><i class="bi bi-bag-dash"><span class="count">0</span></i></a>
+      <a href=" "><button type="button" class="btn-success not-button">0</button></a>
+    </div>
+
+    <div class="icon1">
+      <a href=" "><i class="bi bi-app-indicator"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Phone header -->
+<div class="phone-header">
+  <h1>Quickshop</h1>
+  <div class="icons">
+    <i class="bi bi-list menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasphonemenu"></i>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasphonemenu" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-ph-header">
+        <h1>Collections</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-header1">
+        <div class="input-group box">
+          <input type="text" class="form-control" placeholder="Search For Products" aria-label="Search For Products"
+                 aria-describedby="button-addon2">
+          <button class="btn btn-success" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li><a routerLink="/saree">Woman's Collection</a></li>
+          <li><a routerLink="/mens">Men's Collection</a></li>
+          <li><a routerLink="/kids">Kid's Collection</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

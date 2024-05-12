@@ -1,0 +1,50 @@
+.card-body h1{
+    color:blue;
+    }
+    .cards{
+        float: left;
+    }
+    img{
+        text-align: center;
+        width:70%;
+        height: 150px;
+        margin:40px;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+    }
+    a{
+        color:blue;
+        font-size: 40px;
+        text-decoration: none;
+        
+    }
+    p{
+        font-size: 30px;
+    }
+
+    .text-animation{
+        text-align: center;
+        color: blue;
+    }
+    .icons{
+      display:flex;
+      justify-content: space-between;
+      font-size: 30px;
+      align-items: center;
+    }
+    @keyframes slideIn {
+        0% {
+          opacity: 0;
+          transform: translateY(100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .text-animation {
+        animation-name: slideIn;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
+      }
